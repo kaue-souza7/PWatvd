@@ -6,8 +6,11 @@
     <title>Formulário de Inscrição</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,22 +25,22 @@
                 <!-- Nome Completo -->
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-              
+                <br>
 
                 <!-- E-mail -->
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-                
+                <br>
 
                 <!-- Telefone -->
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="Digite seu Telefone" required>
-              
+                <br>
 
                 <!-- Data de Nascimento -->
                 <label for="nascimento">Data de Nascimento:</label>
                 <input type="date" id="nascimento" name="nascimento" required>
-                
+                <br>
 
                 <!-- Gênero -->
                 <label for="genero">Gênero:</label>
@@ -48,31 +51,35 @@
                     <option value="Outro">Outro</option>
 
                 </select>
-                
+                <br>
 
-                <!-- Tipo de Inscrição -->
-                <label for="tipoInscricao">Tipo de Inscrição:</label>
-                <select id="tipoInscricao" name="tipoInscricao" required>
-                    <option value="">Selecione...</option>
-                    <option value="palestrante">Palestrante</option>
-                    <option value="participante">Participante</option>
-                    <option value="voluntario">Voluntário</option>
-                </select>
-             
+                <div>
+                    <!-- Tipo de Inscrição -->
+                    <label for="tipoInscricao">Tipo de Inscrição:</label>
+                    <select id="tipoInscricao" name="tipoInscricao" required>
+                        <option id="placeholder-select"value="">Selecione...</option>
+                        <option value="palestrante">Palestrante</option>
+                        <option value="participante">Participante</option>
+                        <option value="voluntario">Voluntário</option>
+                    </select>
+                    <br>
+
+                </div>
+                
 
                 <div class="mensagem">
                     <!-- Mensagem -->
                     <label id="text-mensagem "for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" maxlength="200" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="4" maxlength="200" placeholder="Digite sua mensagem aqui..." required></textarea>
                     <br>
                     <br>
 
                 </div>
 
                 <!-- Botões -->
-                <div>
-                    <button type="submit">Enviar</button>
+                <div class="botao">
                     <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
             <footer>
