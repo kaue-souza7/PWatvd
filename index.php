@@ -15,11 +15,12 @@
 <body>
 
     <main>
-        <section>
         <header class="title">
             <h1>Formulário de Inscrição</h1>
             <p>Atividade Chico - Ana e Kauê</p><br>
         </header>
+        <section>
+        
             <form action="server_insert.php" method="post">
                 
                 <!-- Nome Completo -->
@@ -70,10 +71,8 @@
                 <div class="mensagem">
                     <!-- Mensagem -->
                     <label id="text-mensagem "for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" maxlength="200" placeholder="Digite sua mensagem aqui..." required></textarea>
-                    <br>
-                    <br>
-
+                    <textarea id="mensagem" name="mensagem" rows="3" maxlength="200" placeholder="Digite sua mensagem aqui..." required></textarea>
+                     <br>
                 </div>
 
                 <!-- Botões -->
